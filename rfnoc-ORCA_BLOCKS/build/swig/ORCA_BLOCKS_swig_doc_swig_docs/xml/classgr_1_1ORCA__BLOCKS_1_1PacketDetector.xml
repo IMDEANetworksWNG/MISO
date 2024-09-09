@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1ORCA__BLOCKS_1_1PacketDetector" kind="class" language="C++" prot="public">
+    <compoundname>gr::ORCA_BLOCKS::PacketDetector</compoundname>
+    <basecompoundref prot="public" virt="virtual">rfnoc_block</basecompoundref>
+    <includes refid="PacketDetector_8h" local="no">PacketDetector.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1ORCA__BLOCKS_1_1PacketDetector_1acf859646f486e0aba3702ec1ed10c948" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector" kindref="compound">PacketDetector</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;PacketDetector&gt; gr::ORCA_BLOCKS::PacketDetector::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/imdea/rfnoc/src/rfnoc-ORCA_BLOCKS/include/ORCA_BLOCKS/PacketDetector.h" line="41" column="1" bodyfile="/home/imdea/rfnoc/src/rfnoc-ORCA_BLOCKS/include/ORCA_BLOCKS/PacketDetector.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1ORCA__BLOCKS_1_1PacketDetector_1a21149ca87208fbe6e49136f8b6cdcd58" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector_1acf859646f486e0aba3702ec1ed10c948" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::ORCA_BLOCKS::PacketDetector::make</definition>
+        <argsstring>(const gr::ettus::device3::sptr &amp;dev, const ::uhd::stream_args_t &amp;tx_stream_args, const ::uhd::stream_args_t &amp;rx_stream_args, const int block_select=-1, const int device_select=-1, const bool enable_eob_on_stop=true)</argsstring>
+        <name>make</name>
+        <param>
+          <type>const gr::ettus::device3::sptr &amp;</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>const ::uhd::stream_args_t &amp;</type>
+          <declname>tx_stream_args</declname>
+        </param>
+        <param>
+          <type>const ::uhd::stream_args_t &amp;</type>
+          <declname>rx_stream_args</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>block_select</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>device_select</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>enable_eob_on_stop</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector" kindref="compound">ORCA_BLOCKS::PacketDetector</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector" kindref="compound">ORCA_BLOCKS::PacketDetector</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector_1a21149ca87208fbe6e49136f8b6cdcd58" kindref="member">ORCA_BLOCKS::PacketDetector::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/imdea/rfnoc/src/rfnoc-ORCA_BLOCKS/include/ORCA_BLOCKS/PacketDetector.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr::ettus::rfnoc_block</label>
+      </node>
+      <node id="0">
+        <label>gr::ORCA_BLOCKS::PacketDetector</label>
+        <link refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>gr::ettus::rfnoc_block</label>
+      </node>
+      <node id="2">
+        <label>gr::ORCA_BLOCKS::PacketDetector</label>
+        <link refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/imdea/rfnoc/src/rfnoc-ORCA_BLOCKS/include/ORCA_BLOCKS/PacketDetector.h" line="39" column="1" bodyfile="/home/imdea/rfnoc/src/rfnoc-ORCA_BLOCKS/include/ORCA_BLOCKS/PacketDetector.h" bodystart="38" bodyend="59"/>
+    <listofallmembers>
+      <member refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector_1a21149ca87208fbe6e49136f8b6cdcd58" prot="public" virt="non-virtual"><scope>gr::ORCA_BLOCKS::PacketDetector</scope><name>make</name></member>
+      <member refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector_1acf859646f486e0aba3702ec1ed10c948" prot="public" virt="non-virtual"><scope>gr::ORCA_BLOCKS::PacketDetector</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

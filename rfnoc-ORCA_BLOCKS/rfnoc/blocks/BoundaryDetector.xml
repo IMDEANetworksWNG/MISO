@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--Default XML file-->
+<nocblock>
+  <name>BoundaryDetector</name>
+  <blockname>BoundaryDetector</blockname>
+  <ids>
+    <id revision="0">BF145767C30A4F08</id>
+  </ids>
+    <!-- Registers -->
+  <registers>
+    <!--Note: AXI config bus uses 129 & 130-->
+    <setreg>
+      <name>DELAY</name>
+      <address>131</address>
+    </setreg>
+    <setreg>
+      <name>SELOUT</name>
+      <address>132</address>
+    </setreg>
+  </registers>
+  <args>
+    <arg>
+      <name>delay</name>
+      <type>double</type>
+      <value>0.0</value>
+      <check>GE($delay, 0.0) AND LE($delay, 32767.0)</check>
+      <check_message>Invalid threshold.</check_message>
+      <action>
+        SR_WRITE("DELAY", IROUND($delay))
+      </action>
+    </arg>
+    <arg>
+      <name>selout</name>
+      <type>double</type>
+      <value>0.0</value>
+      <check>GE($selout, 0.0) AND LE($selout, 3.0)</check>
+      <check_message>Invalid SEL_OUT.</check_message>
+      <action>
+        SR_WRITE("SELOUT", IROUND($selout))
+      </action>
+    </arg>  
+  </args>
+  <!--One input, one output. If this is used, better have all the info the C++ file.-->
+  <ports>
+    <sink>
+      <name>in</name>
+      <type>sc16</type>
+    </sink>
+    <source>
+      <name>out</name>
+      <type>sc16</type>   
+    </source>
+  </ports>
+</nocblock>

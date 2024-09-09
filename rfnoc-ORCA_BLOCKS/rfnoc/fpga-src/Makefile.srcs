@@ -1,0 +1,20 @@
+$(addprefix SOURCES_PATH, \
+noc_block_CIR.v \
+CIR.vhd \
+GOLAY_SEQ_pkg.vhd \
+noc_block_BoundaryDetector.v \
+BoundaryDetector.vhd \
+noc_block_SymbolTiming.v \
+SymbolTiming.vhd \
+noc_block_CFOC.v \
+CFOC.vhd \
+CFOEcordic.vhd \
+CFOEcordic_atan_vbkb.vhd \
+CFOCddfs.vhd \
+CFOCddfs_mac_mulseOg.vhd \
+CFOCddfs_mac_muladEe.vhd \
+CFOCddfs_mul_mul_cud.vhd \
+CFOCddfs_quarter_bkb.vhd \
+noc_block_PacketDetector.v \
+PacketDetector.vhd \
+) \

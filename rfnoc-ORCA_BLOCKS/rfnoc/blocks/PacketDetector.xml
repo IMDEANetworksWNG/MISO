@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<!--Default XML file-->
+<nocblock>
+  <name>PacketDetector</name>
+  <blockname>PacketDetector</blockname>
+  <ids>
+    <id revision="0">FFFFC10000000000</id>
+  </ids>
+    <!-- Registers -->
+  <registers>
+    <!--Note: AXI config bus uses 129 & 130-->
+    <setreg>
+      <name>BLOCK_RESET</name>
+      <address>131</address>
+    </setreg>
+    <setreg>
+      <name>BLOCK_START</name>
+      <address>132</address>
+    </setreg>
+    <setreg>
+      <name>PD_THRESHOLD</name>
+      <address>133</address>
+    </setreg>
+    <setreg>
+      <name>NOISE_THRESHOLD</name>
+      <address>134</address>
+    </setreg>
+    <setreg>
+      <name>N_COUNT</name>
+      <address>135</address>
+    </setreg>
+    <setreg>
+      <name>PD_HIGH_TIME</name>
+      <address>136</address>
+    </setreg>
+    <setreg>
+      <name>SEL_OUT</name>
+      <address>137</address>
+    </setreg>
+    <setreg>
+      <name>NPER</name>
+      <address>138</address>
+    </setreg>
+  </registers>
+  <args>
+    <arg>
+      <name>pdth</name>
+      <type>double</type>
+      <value>0.0</value>
+      <check>GE($pdth, 0.0) AND LE($pdth, 1.0)</check>
+      <check_message>PD threshold must be in [0, 1].</check_message>
+      <action>
+        SR_WRITE("PD_THRESHOLD", IROUND(MULT(256.0,$pdth)))
+      </action>
+    </arg>
+    <arg>
+      <name>nth</name>
+      <type>double</type>
+      <value>0.0</value>
+      <check>GE($nth, 0.0) AND LE($nth, 1.0)</check>
+      <check_message>Noise threshold must be in [0, 1].</check_message>
+      <action>
+        SR_WRITE("NOISE_THRESHOLD", IROUND(MULT(32767.0,$nth)))
+      </action>
+    </arg>
+    <arg>
+      <name>ncount</name>
+      <type>double</type>
+      <value>0.0</value>
+      <check>GE($ncount, 0.0) AND LE($ncount, 32767.0)</check>
+      <check_message>Invalid N_COUNT.</check_message>
+      <action>
+        SR_WRITE("N_COUNT", IROUND($ncount))
+      </action>
+    </arg>
+    <arg>
+      <name>pdhightime</name>
+      <type>double</type>
+      <value>0.0</value>
+      <check>GE($pdhightime, 0.0) AND LE($pdhightime, 32767.0)</check>
+      <check_message>Invalid PD_HIGH_TIME.</check_message>
+      <action>
+        SR_WRITE("PD_HIGH_TIME", IROUND($pdhightime))
+      </action>
+    </arg>  
+    <arg>
+      <name>selout</name>
+      <type>double</type>
+      <value>0.0</value>
+      <check>GE($selout, 0.0) AND LE($selout, 3.0)</check>
+      <check_message>Invalid SEL_OUT.</check_message>
+      <action>
+        SR_WRITE("SEL_OUT", IROUND($selout))
+      </action>
+    </arg>  
+    <arg>
+      <name>nper</name>
+      <type>double</type>
+      <value>0.0</value>
+      <check>GE($nper, 0.0) AND LE($nper, 17.0)</check>
+      <check_message>NPER must be in [0, 17].</check_message>
+      <action>
+        SR_WRITE("NPER", IROUND($nper))
+      </action>
+    </arg>  
+  </args>
+  <!--One input, one output. If this is used, better have all the info the C++ file.-->
+  <ports>
+    <sink>
+      <name>in</name>
+      <type>sc16</type>
+    </sink>
+    <source>
+      <name>out</name>
+      <type>sc16</type>   
+    </source>
+  </ports>
+</nocblock>

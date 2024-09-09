@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector" kind="class"><name>gr::ORCA_BLOCKS::PacketDetector</name>
+    <member refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector_1acf859646f486e0aba3702ec1ed10c948" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector_1a21149ca87208fbe6e49136f8b6cdcd58" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1ORCA__BLOCKS" kind="namespace"><name>gr::ORCA_BLOCKS</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a3bd293212098aeb12930a7c7b035aa6a" kind="define"><name>ORCA_BLOCKS_API</name></member>
+  </compound>
+  <compound refid="PacketDetector_8h" kind="file"><name>PacketDetector.h</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/imdea/rfnoc/src/rfnoc-ORCA_BLOCKS/include</name>
+  </compound>
+  <compound refid="dir_fac9bef0269dfbbaccc1d02ed01a1014" kind="dir"><name>/home/imdea/rfnoc/src/rfnoc-ORCA_BLOCKS/include/ORCA_BLOCKS</name>
+  </compound>
+</doxygenindex>

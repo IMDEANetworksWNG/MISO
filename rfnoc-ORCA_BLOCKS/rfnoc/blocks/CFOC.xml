@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!--Default XML file-->
+<nocblock>
+  <name>CFOC</name>
+  <blockname>CFOC</blockname>
+  <ids>
+    <id revision="0">8810BD64FDF8DCFC</id>
+  </ids>
+    <!-- Registers -->
+  <registers>
+    <!--Note: AXI config bus uses 129 & 130-->
+    <setreg>
+      <name>NPER</name>
+      <address>132</address>
+    </setreg>
+    <setreg>
+      <name>NITER</name>
+      <address>133</address>
+    </setreg>
+    <setreg>
+      <name>SELOUT</name>
+      <address>134</address>
+    </setreg>
+  </registers>
+  <args>
+    <arg>
+      <name>nper</name>
+      <type>double</type>
+      <value>0.0</value>
+      <check>GE($nper, 0.0) AND LE($nper, 17.0)</check>
+      <check_message>NPER must be in [1 17].</check_message>
+      <action>
+        SR_WRITE("NPER", IROUND($nper))
+      </action>
+    </arg>
+    <arg>
+      <name>niter</name>
+      <type>double</type>
+      <value>0.0</value>
+      <check>GE($niter, 0.0) AND LE($niter, 22.0)</check>
+      <check_message>NITER must be in [1 22].</check_message>
+      <action>
+        SR_WRITE("NITER", IROUND($niter))
+      </action>
+    </arg>
+    <arg>
+      <name>selout</name>
+      <type>double</type>
+      <value>0.0</value>
+      <check>GE($selout, 0.0) AND LE($selout, 2.0)</check>
+      <check_message>SEL OUT must be in [0 2].</check_message>
+      <action>
+        SR_WRITE("SELOUT", IROUND($selout))
+      </action>
+    </arg>
+  </args>
+  <!--One input, one output. If this is used, better have all the info the C++ file.-->
+  <ports>
+    <sink>
+      <name>in</name>
+      <type>sc16</type>
+    </sink>
+    <source>
+      <name>out</name>
+      <type>sc16</type>   
+    </source>
+  </ports>
+</nocblock>

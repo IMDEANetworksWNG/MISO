@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="namespacegr_1_1ORCA__BLOCKS" kind="namespace" language="C++">
+    <compoundname>gr::ORCA_BLOCKS</compoundname>
+    <innerclass refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector" prot="public">gr::ORCA_BLOCKS::PacketDetector</innerclass>
+    <innerclass refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector__impl" prot="public">gr::ORCA_BLOCKS::PacketDetector_impl</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/imdea/rfnoc/src/rfnoc-ORCA_BLOCKS/include/ORCA_BLOCKS/PacketDetector.h" line="31" column="1"/>
+  </compounddef>
+</doxygen>

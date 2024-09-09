@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1ORCA__BLOCKS_1_1PacketDetector__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::ORCA_BLOCKS::PacketDetector_impl</compoundname>
+    <basecompoundref refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector" prot="public" virt="non-virtual">gr::ORCA_BLOCKS::PacketDetector</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">rfnoc_block_impl</basecompoundref>
+    <includes refid="PacketDetector__impl_8h" local="no">PacketDetector_impl.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1ORCA__BLOCKS_1_1PacketDetector__impl_1aedc8a75d96edecd828c623b28e046429" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::ORCA_BLOCKS::PacketDetector_impl::PacketDetector_impl</definition>
+        <argsstring>(const gr::ettus::device3::sptr &amp;dev, const ::uhd::stream_args_t &amp;tx_stream_args, const ::uhd::stream_args_t &amp;rx_stream_args, const int block_select, const int device_select, const bool enable_eob_on_stop)</argsstring>
+        <name>PacketDetector_impl</name>
+        <param>
+          <type>const gr::ettus::device3::sptr &amp;</type>
+          <declname>dev</declname>
+        </param>
+        <param>
+          <type>const ::uhd::stream_args_t &amp;</type>
+          <declname>tx_stream_args</declname>
+        </param>
+        <param>
+          <type>const ::uhd::stream_args_t &amp;</type>
+          <declname>rx_stream_args</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>block_select</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>device_select</declname>
+        </param>
+        <param>
+          <type>const bool</type>
+          <declname>enable_eob_on_stop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/imdea/rfnoc/src/rfnoc-ORCA_BLOCKS/lib/PacketDetector_impl.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1ORCA__BLOCKS_1_1PacketDetector__impl_1aaf109d0d3f6838363921c5c038c5be19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::ORCA_BLOCKS::PacketDetector_impl::~PacketDetector_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~PacketDetector_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/imdea/rfnoc/src/rfnoc-ORCA_BLOCKS/lib/PacketDetector_impl.h" line="45" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>gr::ORCA_BLOCKS::PacketDetector_impl</label>
+        <link refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector__impl"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gr::ettus::rfnoc_block</label>
+      </node>
+      <node id="6">
+        <label>gr::ORCA_BLOCKS::PacketDetector</label>
+        <link refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>gr::ettus::rfnoc_block_impl</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>gr::ORCA_BLOCKS::PacketDetector_impl</label>
+        <link refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector__impl"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>gr::ettus::rfnoc_block</label>
+      </node>
+      <node id="10">
+        <label>gr::ORCA_BLOCKS::PacketDetector</label>
+        <link refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>gr::ettus::rfnoc_block_impl</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/imdea/rfnoc/src/rfnoc-ORCA_BLOCKS/lib/PacketDetector_impl.h" line="32" column="1" bodyfile="/home/imdea/rfnoc/src/rfnoc-ORCA_BLOCKS/lib/PacketDetector_impl.h" bodystart="31" bodyend="48"/>
+    <listofallmembers>
+      <member refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector_1a21149ca87208fbe6e49136f8b6cdcd58" prot="public" virt="non-virtual"><scope>gr::ORCA_BLOCKS::PacketDetector_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector__impl_1aedc8a75d96edecd828c623b28e046429" prot="public" virt="non-virtual"><scope>gr::ORCA_BLOCKS::PacketDetector_impl</scope><name>PacketDetector_impl</name></member>
+      <member refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector_1acf859646f486e0aba3702ec1ed10c948" prot="public" virt="non-virtual"><scope>gr::ORCA_BLOCKS::PacketDetector_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1ORCA__BLOCKS_1_1PacketDetector__impl_1aaf109d0d3f6838363921c5c038c5be19" prot="public" virt="non-virtual"><scope>gr::ORCA_BLOCKS::PacketDetector_impl</scope><name>~PacketDetector_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

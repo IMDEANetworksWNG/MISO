@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/imdea/rfnoc/src/rfnoc-ORCA_BLOCKS/build/swig/ORCA_BLOCKS_swig_swig_2d0df.cpp
+

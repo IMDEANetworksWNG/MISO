@@ -1,0 +1,20 @@
+Start testing: May 07 21:58 CEST
+----------------------------------------------------------
+1/1 Testing: test_ORCA_BLOCKS
+1/1 Test: test_ORCA_BLOCKS
+Command: "/bin/sh" "/home/imdea/rfnoc/src/rfnoc-ORCA_BLOCKS/build/lib/test_ORCA_BLOCKS_test.sh"
+Directory: /home/imdea/rfnoc/src/rfnoc-ORCA_BLOCKS/build/lib
+"test_ORCA_BLOCKS" start time: May 07 21:58 CEST
+Output:
+----------------------------------------------------------
+
+
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"test_ORCA_BLOCKS" end time: May 07 21:58 CEST
+"test_ORCA_BLOCKS" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: May 07 21:58 CEST

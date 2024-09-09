@@ -1,0 +1,5 @@
+add_subdirectory(noc_block_PacketDetector_tb)
+add_subdirectory(noc_block_CFOC_tb)
+add_subdirectory(noc_block_SymbolTiming_tb)
+add_subdirectory(noc_block_BoundaryDetector_tb)
+add_subdirectory(noc_block_CIR_tb)

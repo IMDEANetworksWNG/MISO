@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!--Default XML file-->
+<nocblock>
+  <name>CIR</name>
+  <blockname>CIR</blockname>
+  <ids>
+    <id revision="0">8C9343F05B9400BF</id>
+  </ids>
+  <!-- Registers -->
+  <registers>
+    <!--Note: AXI config bus uses 129 & 130-->
+    <setreg>
+      <name>SELOUT</name>
+      <address>131</address>
+    </setreg>
+  </registers>
+  <args>
+    <arg>
+      <name>selout</name>
+      <type>double</type>
+      <value>0.0</value>
+      <check>GE($selout, 0.0) AND LE($selout, 1.0)</check>
+      <check_message>Invalid SEL_OUT.</check_message>
+      <action>
+        SR_WRITE("SELOUT", IROUND($selout))
+      </action>
+    </arg>  
+  </args>  <!--One input, one output. If this is used, better have all the info the C++ file.-->
+  <ports>
+    <sink>
+      <name>in</name>
+      <type>sc16</type>
+    </sink>
+    <source>
+      <name>out</name>
+      <type>sc16</type>   
+    </source>
+  </ports>
+</nocblock>

@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu May 16 13:43:15 2019
+# Process ID: 27591
+# Current directory: /home/imdea/rfnoc/src/rfnoc-ORCA_BLOCKS/rfnoc/testbenches/noc_block_SymbolTiming_tb
+# Command line: vivado -mode batch -source /home/imdea/rfnoc/src/uhd-fpga/usrp3/tools/scripts/viv_sim_project.tcl -log xsim.log -nojournal
+# Log file: /home/imdea/rfnoc/src/rfnoc-ORCA_BLOCKS/rfnoc/testbenches/noc_block_SymbolTiming_tb/xsim.log
+# Journal file: 
+#-----------------------------------------------------------
