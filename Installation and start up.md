@@ -1,6 +1,6 @@
 ## INSTALLATION AND START-UP
 
-#### Requirements
+### Requirements
 * Ubuntu OS 18.04
 * GNU-Radio 3.7.13.4 (check your version by typing gnuradio-companion --version)
 * UHD 3.14.0 (check your version by typing uhd_usrp_probe --version)
