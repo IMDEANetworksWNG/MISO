@@ -188,6 +188,6 @@ sudo ifconfig <Network_interface> mtu 1500 # For 1 GigE
 ## Placing daughterboards
 For this project were used basic Tx and basic Rx daughterboards that are capable of transmitting and receiving baseband IQ samples respectively. The assembly was carried out as shown in the following pictures:
 ### Basic TX
-![Tx basic](C:\Users\antho\Documents\Gitlab\WNG Github\MISO\Docs\Basic_tx.jpg)
+![Tx_basic](https://github.com/IMDEANetworksWNG/MISO/blob/main/Docs/Basic_tx.jpg)
 ### Basic RX
-![Rx basic](C:\Users\antho\Documents\Gitlab\WNG Github\MISO\Docs\Basic_rx.jpg)
+![Rx_basic](https://github.com/IMDEANetworksWNG/MISO/blob/main/Docs/basic_rx.jpg)
