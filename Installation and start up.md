@@ -15,14 +15,14 @@
 * UHD 3.14.0 (check your version by typing uhd_usrp_probe --version)
 * gr-ettus
 * Xilinx Vivado Vivado HLS 2017.4
-* Python 2
+* Python 2.7
 
 ## Installing Xilinx Vivado HLS 2017.4
 Assuming you already have Ubuntu 18.04 installed the next is to install Xilinx Vivado, but first read carefully the **important previous steps below**.
 
 ### Previous steps
-* #### **Set the sheel**
-In Ubuntu it is recommended to set the sheel to `bash` by running the following commands in the terminal. Choose `No` when prompted by the first command and the second command will validate the that bash will be used.
+* #### **Set the shell**
+In Ubuntu it is recommended to set the shell to `bash` by running the following commands in the terminal. Choose `No` when prompted by the first command and the second command will validate the that bash will be used.
 ~~~
 sudo dpkg-reconfigure dash
 ll /bin/sh
@@ -191,3 +191,19 @@ For this project were used basic Tx and basic Rx daughterboards that are capable
 ![Tx_basic](https://github.com/IMDEANetworksWNG/MISO/blob/main/Docs/Basic_tx.jpg)
 ### Basic RX
 ![Rx_basic](https://github.com/IMDEANetworksWNG/MISO/blob/main/Docs/basic_rx.jpg)
+
+## Loading the default FPGA image to the transmitter
+Ettus Research offers a defaul image which is pre-built with a set of RFNoC blocks. To get the default image, run the following command:
+~~~
+uhd_images_downloader
+~~~
+This defaul image contains the blocks:
+~~~
+* DmaFIFO_0
+* Radio_0
+* Radio_1
+* DDC_0
+* DDC_1
+* DUC_0
+* DUC_1
+~~~ 
