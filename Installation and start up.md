@@ -188,14 +188,13 @@ sudo ifconfig <Network_interface> mtu 1500 # For 1 GigE
 ## Placing daughterboards
 For this project were used basic Tx and basic Rx daughterboards that are capable of transmitting and receiving baseband IQ samples respectively. The assembly was carried out as shown in the following pictures:
 ### Basic TX
-<p align="center">
 ![Tx_basic](https://github.com/IMDEANetworksWNG/MISO/blob/main/Docs/Basic_tx.jpg)
-</p>
+
 
 ### Basic RX
 ![Rx_basic](https://github.com/IMDEANetworksWNG/MISO/blob/main/Docs/basic_rx.jpg)
 
-## Loading the default FPGA image to the transmitter
+## Loading the default image to the transmitter USRP
 Ettus Research offers a defaul image which is pre-built with a set of RFNoC blocks. To get the default image, run the following command:
 ~~~
 uhd_images_downloader
@@ -210,3 +209,29 @@ This defaul image contains the blocks:
 * DUC_0
 * DUC_1
 ~~~ 
+
+In order to load the image through Ethernet to the USRP, run the following command (see more details in [4]): 
+~~~
+uhd_image_loader --args="type=x300,addr=<IP address>"
+~~~
+
+## Creating and loading the image to the receiver USRP
+Since it is possible to build an image with custom RFNoC blocks, the image for the receiver USRP is generated with the blocks previously created for this project (PacketDetector, CFOC, SymbolTiming, BoundaryDetector, and CIR), which are located on the route `MISO\rfnoc-ORCA_BLOCKS\include\ORCA_BLOCKS\` on this repository.
+
+### How to create the image
+
+1. Copy the the folder `ORCA_BLOCKS` into your workspace `rfnoc`
+2. The script to initiate a compile is called `uhd_image_builder.py`, and is located in the `\home\user\rfnoc\uhd\fpga-src\usrp3\tools\scripts\` directory. Go to this location.
+3. Type the command:
+~~~
+./uhd_image_builder.py PacketDetector CFOC ddc duc fir_filter SymbolTiming BoundaryDetector CIR -I [USER PREFIX]/src/rfnoc-ORCA_BLOCKS/ -d x310 -t X310_RFNOC_HG -m 10 --fill-with-fifos
+~~~
+4. You will see in the terminal that the image is being created. Once generated, you will see that the process is finished. In the path `\home\user\rfnoc\uhd\fpga-src\usrp3\top\x300\build-X310_RFNOC_HG\` you can find the .bit image as well as the .bin file and the .log of the report.
+
+### How to load the image to the receiver USRP
+
+1. Run the following command (change your user in the path):
+~~~
+uhd_image_loader --args "type=x300,addr={IP_ADDRESS}" --fpga-path home/user/rfnoc/uhd/fpga-src/usrp3/top/x300/build-X310_RFNOC_HG/x300.bit
+~~~
+2. Wait until the image has loaded and restart the usrp.
